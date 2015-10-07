@@ -1,0 +1,11 @@
+<div class="container-fluid text-center">
+<div class="row">
+<h2>Pin</h2>
+</div>
+
+<div class="row">
+<%=@pin.comment%></br>
+<img src="<%=@pin.image%>" width='200px' height='200px'/></br>
+<a href="<%=@pin.url%>" target='blank'>Visit </a> &hearts; <a href="/pins/<%=@pin.id%>/edit"> Edit</a> &hearts; 
+<%= link_to 'Destroy',  @pin,  method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
